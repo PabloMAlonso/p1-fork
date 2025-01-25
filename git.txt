@@ -1,5 +1,5 @@
 GIT CLONE
-
+Este comando se usa para clonar un repositorio remoto a tu máquina local:
 @PabloMAlonso ➜ /workspaces/p1-fork (main) $ git clone https://github.com/gitt-3-pat/p1
 Cloning into 'p1'...
 remote: Enumerating objects: 6, done.
@@ -8,6 +8,7 @@ remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 5 (from 1)
 Receiving objects: 100% (6/6), done.
 
 GIT STATUS
+Este comando te muestra el estado actual de tu repositorio local:
 On branch main
 Your branch is up to date with 'origin/main'.
 
@@ -18,19 +19,23 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 
 GIT ADD
+Este comando agregua todos los archivos modificados en el directorio actual al area de producción:
 warning: adding embedded git repository: p1
 
 GIT COMMIT
+Este comando crea un commit (confirmación) de todos los cambios que hayas agregado al área de preparación. En este caso, TU MENSAJE:
 git commit -m "TU MENSAJE"
 [main 085d20f] TU MENSAJE
  1 file changed, 1 insertion(+)
 
 GIT PUSH
+Este comando sube los cambios que has hecho commit a un repositorio remoto. En este caso se ha denegado el permiso:
 remote: Permission to PabloMAlonso/p1-fork.git denied to PabloMAlonso.
 fatal: unable to access 'https://github.com/PabloMAlonso/p1-fork/': The requested URL returned error: 403
  create mode 160000 p1
 
 GIT CHECKOUT 
+Este comando se utiliza para cambiar de rama dentro de tu repositorio local. En este caso a main:
 Already on 'main'
 Your branch is ahead of 'origin/main' by 1 commit.
   (use "git push" to publish your local commits)
